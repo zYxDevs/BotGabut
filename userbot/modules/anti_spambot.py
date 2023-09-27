@@ -67,7 +67,6 @@ async def ANTI_SPAMBOTS(welcm):
                 async for message in bot.iter_messages(
                     welcm.chat_id, from_user=user_id
                 ):
-
                     correct_type = isinstance(message, Message)
                     if not message or not correct_type:
                         break
@@ -156,7 +155,6 @@ async def ANTI_SPAMBOTS(welcm):
                         reported = True
                 else:
                     try:
-
                         await welcm.reply(
                             "`Potential Spambot Detected !!`\n"
                             f"`REASON:` {reason}\n"
