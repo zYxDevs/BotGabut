@@ -97,7 +97,6 @@ def register(**args):
             except KeyboardInterrupt:
                 pass
             except BaseException:
-
                 # Check if we have to disable it.
                 # If not silence the log spam on the console,
                 # with a dumb except.

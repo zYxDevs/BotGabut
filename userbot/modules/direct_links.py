@@ -92,11 +92,21 @@ async def zippy_share(url: str) -> str:
     bs_obj = BeautifulSoup(response_content, "lxml")
 
     try:
-        js_script = bs_obj.find("div", {"class": "center",}).find_all(
+        js_script = bs_obj.find(
+            "div",
+            {
+                "class": "center",
+            },
+        ).find_all(
             "script"
         )[1]
     except BaseException:
-        js_script = bs_obj.find("div", {"class": "right",}).find_all(
+        js_script = bs_obj.find(
+            "div",
+            {
+                "class": "right",
+            },
+        ).find_all(
             "script"
         )[0]
 

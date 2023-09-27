@@ -3,7 +3,6 @@ from aiohttp.client_exceptions import ClientConnectorError
 
 
 class PasteBin:
-
     DOGBIN_URL = "https://del.dog/"
     HASTEBIN_URL = "https://www.toptal.com/developers/hastebin/"
     NEKOBIN_URL = "https://nekobin.com/"
